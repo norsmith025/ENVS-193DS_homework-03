@@ -95,6 +95,8 @@ a.  In Homework 2, I looked at a T-test and a one-way ANOVA from the study "Func
 
     This is the figure based on their ANOVA results.
 
-b.  The authors visually represented their statistics in the figure by using boxplots to show the distribution of leaf-litter decomposition rates across different stream quality categories. The x-axes shows the stream quality categories and the y-axes displays the decomposition rates and they are both logically positioned for intuitive readability. They also show some summary statistics like the medians, interquartile ranges, outliers within the boxplots so topical conclusions may be infered, but they are missing all the raw data points so a deep analysis cannot be done off of these plots alone.
+b.  The authors visually represented their statistics in the figure by using boxplots to show the distribution of leaf-litter decomposition rates across different stream quality categories. The x-axes shows the stream quality categories and the y-axes displays the decomposition rates and they are both logically positioned for intuitive readability. They also show some summary statistics like the medians, interquartile ranges, outliers within the boxplots so topical conclusions may be inferred, but they are missing all the raw data points so a deep analysis cannot be done off of these plots alone.
 
-c.  
+c.  The authors handle "visual clutter" well, since each subplot is separated and everything is color-coded which helps increase the readability and clarity without adding clutter. The data:ink ration is good, since the figure does a good job avoiding unnecessary elements while still being able to convey the key results found in through their ANOVA.
+
+d.  
