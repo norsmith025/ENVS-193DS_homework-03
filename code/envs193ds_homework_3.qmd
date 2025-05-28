@@ -9,7 +9,7 @@ format:
     toc-location: left
 ---
 
-## Part 1. Set up tasks
+# Part 1. Set up tasks
 
 \[GitHub Repository\] (https://github.com/norsmith025/ENVS-193DS_homework-03.git)
 
@@ -25,9 +25,9 @@ library(readxl) # load readxl
 
 ```
 
-## Part 2. Problems
+# Part 2. Problems
 
-### Problem 1. Personal data
+## Problem 1. Personal data
 
 a.  I can sort my hydration levels into 2 groups, Low Water Intake and High Water Intake, and find the mean productivity level, from a scale of 1-5, for each group. This would be informative because I think I am *generally* more productive on days where I am more hydrated.
 
@@ -83,7 +83,7 @@ summary_table %>% # use gt to create formatted table from above summary
              Max_Productivity = "Maximum") # change name to "Maximum"
 ```
 
-### Problem 2. Affective visualization
+## Problem 2. Affective visualization
 
 a.  An affective visualization for my personal data could be something like a quilt with various colors to represent different productivity levels and the size of each square being large or small depending on high or low hydration levels. It could also include small symbols within each square to show which extraneous factors could also be involved, like sleep, caffeinated drinks, screen time, and outside time. This visualization would make the data I collected easy to follow without having to interperet the data that heavily since the colors and symbols will represent all of the contributing factors and resulting productivity levels. All this being said, I do not think I have the time and/or materials to make a quilt with this project, even though I think this would be the best representation, so I will opt for a drawing that conveys the same message, drawing the squares and symbols instead of quilting them.
 
@@ -95,9 +95,9 @@ c.  This is a rough draft of my visualization:![](images/IMG_80029AE4CD6F-1-01.j
 
 d.  In this piece, I am showing the correlation between my productivity and my hydration, where the large shapes are high hydration and the smaller ones are low hydration and the various colors represent my productivity; the bands (not present yet) represent how many caffeinated drinks consumed, whether or not I spent time outside that day, how much sleep I got, and how much screen time I had that day. I took my influence from abstract art pieces I have seen and am creating this piece on Procreate on my iPad, where I started with a rough sketch of the shapes, with labels for which date each one correlated to, and then added colors based on my recorded productivity from that day.
 
-### Problem 3. Statistical Critique
+## Problem 3. Statistical Critique
 
-a.  In Homework 2, I looked at a T-test and a one-way ANOVA from the study "Functional indicators of stream health: a river-basin approach" by Feio et al., however, I cannot access this article anymore as it is now behind a paywall. For this statistical critique I am using a similar article "Towards a functional assessment of stream integrity: A first large-scale application using leaf litter decomposition" by Brosed, Jabiol, and Chauvet, who also use an ANOVA in their analysis. ![](images/Screenshot 2025-05-28 at 1.50.36 PM-02.png)
+a.  In Homework 2, I looked at a T-test and a one-way ANOVA from the study "Functional indicators of stream health: a river-basin approach" by Feio et al., however, I cannot access this article anymore as it is now behind a paywall. For this statistical critique I am using a similar article "Towards a functional assessment of stream integrity: A first large-scale application using leaf litter decomposition" by Brosed, Jabiol, and Chauvet, who also use an ANOVA in their analysis. ![](images/Screenshot 2025-05-28 at 1.50.36 PM.jpeg)
 
     This is the figure based on their ANOVA results.
 
