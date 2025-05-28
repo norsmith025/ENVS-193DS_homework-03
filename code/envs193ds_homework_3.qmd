@@ -1,5 +1,7 @@
 ---
 title: "envs193ds_homework_3"
+author: "Nora Smith"
+date: "28 May 2025"
 format: html
 ---
 
