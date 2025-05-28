@@ -1,0 +1,16 @@
+---
+title: "envs193ds_homework_3"
+format: html
+---
+
+[GitHub Repository] (https://github.com/norsmith025/ENVS-193DS_homework-03.git)
+
+```{r}
+#| message: false # hide messages in render
+
+# read in packages
+library(tidyverse) # load tidyverse 
+library(here) # load here
+library(gt) # load gt
+library(janitor) # load janitor
+library(readxl) # load readxl
