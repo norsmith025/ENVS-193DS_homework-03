@@ -80,3 +80,7 @@ summary_table %>% # use gt to create formatted table from above summary
 ## Problem 2. Affective visualization
 
 a.  An affective visualization for my personal data could be something like a quilt with various colors to represent different productivity levels and the size of each square being large or small depending on high or low hydration levels. It could also include small symbols within each square to show which extraneous factors could also be involved, like sleep, caffeinated drinks, screen time, and outside time. This visualization would make the data I collected easy to follow without having to interperet the data that heavily since the colors and symbols will represent all of the contributing factors and resulting productivity levels. All this being said, I do not think I have the time and/or materials to make a quilt with this project, even though I think this would be the best representation, so I will opt for a drawing that conveys the same message, drawing the squares and symbols instead of quilting them.
+
+b.  This is the rough sketch of the above visualization, I still need to work out some of the proportions, color scheme, etc., but that will be worked out for the next part (question c.). ![](images/IMG_72DC1FAE5157-1-01.jpeg)
+
+c.  This is a rough draft of my visualization:
