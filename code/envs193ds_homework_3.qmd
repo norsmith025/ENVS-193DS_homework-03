@@ -55,3 +55,23 @@ b.  Visualization
     ```
 
 c.  Add caption: Productivity levels grouped by Low and High Water Intake (Hydration Levels). My mean productivity is higher on days with ≥32 ounces (oz) of water intake, which indicates a possible positive relationship between hydration and productivity.
+
+d.  Table presentation
+
+```{r}
+# create summary_table and calculate summary statistics
+summary_table <- my_data %>% # pipe "my_data" into summary table
+  group_by(Hydration_Level) %>% # group data by "Hydration_Level"
+  # calculate summary statistics for each group
+  summarise(Mean_Productivity = round(mean(Productivity, na.rm = TRUE), 1), # Mean of "Productivity", rounded to 1 decimal place, ignore missing values
+            Min_Productivity = min(Productivity, na.rm = TRUE), # minimum "Productivity" value, ignore missing values 
+            Max_Productivity = max(Productivity, na.rm = TRUE)) # maximum "Productivity" value, ignore missing values 
+
+summary_table %>% # use gt to create formatted table from above summary
+  gt() %>% # convert summary_table to a gt table object
+  tab_header(title = "Productivity Summary Based on Hydration Level") %>% # add table title
+  cols_label(Hydration_Level = "Hydration Level", # change name to "Hydration Level"
+             Mean_Productivity = "Mean Productivity", # change name to "Mean Productivity"
+             Min_Productivity = "Minimum", # change name to "Minimum"
+             Max_Productivity = "Maximum") # change name to "Maximum"
+```
