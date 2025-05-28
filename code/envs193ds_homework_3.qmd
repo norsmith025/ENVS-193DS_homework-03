@@ -97,9 +97,7 @@ d.  In this piece, I am showing the correlation between my productivity and my h
 
 ## Problem 3. Statistical Critique
 
-a.  In Homework 2, I looked at a T-test and a one-way ANOVA from the study "Functional indicators of stream health: a river-basin approach" by Feio et al., however, I cannot access this article anymore as it is now behind a paywall. For this statistical critique I am using a similar article "Towards a functional assessment of stream integrity: A first large-scale application using leaf litter decomposition" by Brosed, Jabiol, and Chauvet, who also use an ANOVA in their analysis. ![](images/Screenshot 2025-05-28 at 1.50.36 PM.jpeg)
-
-    This is the figure based on their ANOVA results.
+a.  In Homework 2, I looked at a T-test and a one-way ANOVA from the study "Functional indicators of stream health: a river-basin approach" by Feio et al., however, I cannot access this article anymore as it is now behind a paywall. For this statistical critique I am using a similar article "Towards a functional assessment of stream integrity: A first large-scale application using leaf litter decomposition" by Brosed, Jabiol, and Chauvet, who also use an ANOVA in their analysis.![](images/anova_figure.jpeg){width="603"}This is the figure based on their ANOVA results.
 
 b.  The authors visually represented their statistics in the figure by using boxplots to show the distribution of leaf-litter decomposition rates across different stream quality categories. The x-axes shows the stream quality categories and the y-axes displays the decomposition rates and they are both logically positioned for intuitive readability. They also show some summary statistics like the medians, interquartile ranges, outliers within the boxplots so topical conclusions may be inferred, but they are missing all the raw data points so a deep analysis cannot be done off of these plots alone.
 
