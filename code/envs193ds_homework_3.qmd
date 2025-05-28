@@ -3,7 +3,9 @@ title: "envs193ds_homework_3"
 format: html
 ---
 
-[GitHub Repository] (https://github.com/norsmith025/ENVS-193DS_homework-03.git)
+## Part 1. Set up tasks
+
+\[GitHub Repository\] (https://github.com/norsmith025/ENVS-193DS_homework-03.git)
 
 ```{r}
 #| message: false # hide messages in render
@@ -14,3 +16,42 @@ library(here) # load here
 library(gt) # load gt
 library(janitor) # load janitor
 library(readxl) # load readxl
+
+```
+
+## Part 2. Problems
+
+#### Problem 1. Personal data
+
+a.  I can sort my hydration levels into 2 groups, Low Water Intake and High Water Intake, and find the mean productivity level, from a scale of 1-5, for each group. This would be informative because I think I am *generally* more productive on days where I am more hydrated.
+
+b.  Visualization
+
+    ```{r}
+    # create "my_data" object from "my_data.csv" from "data" folder
+    my_data <- read_csv("data/my_data.csv", skip = 1) 
+
+    # clean data and create columns
+    my_data <- my_data %>%
+      mutate(Water = as.numeric(`Water (oz)`), # convert to numeric values and store in column "Water"
+             Productivity = as.numeric(`Productivity (1-5)`), # convert to numeric values and store in column "Productivity"
+             Hydration_Level = if_else(Water >= 32, "High Water Intake", "Low Water Intake")) # create new column "Hydration_Level" based on Water with threshold of 32 oz
+
+    # create the plot
+    ggplot(my_data, aes(x = Hydration_Level, y = Productivity, color = Hydration_Level)) +
+      geom_jitter(width = 0.3, alpha = 0.8) + # add jittered points 
+      stat_summary(fun = mean, geom = "crossbar", width = 0.5, color = "darkgrey") + # add horizontal bar to show mean productivity for both hydration groups
+      scale_color_manual(values = c("High Water Intake" = "cadetblue", "Low Water Intake" = "salmon")) + # manually set colors for both hydration groups
+      labs(x = "Hydration Level", # label x-axis
+           y = "Productivity (1-5)", # label y-axis
+           title = "Impact of Hydration on Productivity Levels", # create title
+           caption = "Productivity levels grouped by Low and High Water Intake (Hydration Levels).\nMy mean productivity is higher on days with ≥32 ounces (oz) of water intake,\n which indicates a possible positive") + # add caption
+      theme_minimal() + # use minimal theme 
+      theme(plot.caption = element_text(hjust = 0.5,
+                                        size = 10, 
+                                        margin = margin(t = 10))) + # align caption 
+      theme(legend.position = "none") # hide legend 
+
+    ```
+
+c.  Add caption: Productivity levels grouped by Low and High Water Intake (Hydration Levels). My mean productivity is higher on days with ≥32 ounces (oz) of water intake, which indicates a possible positive relationship between hydration and productivity.
