@@ -28,6 +28,7 @@ a.  I can sort my hydration levels into 2 groups, Low Water Intake and High Wate
 b.  Visualization
 
     ```{r}
+    #| message: FALSE
     # create "my_data" object from "my_data.csv" from "data" folder
     my_data <- read_csv("data/my_data.csv", skip = 1) 
 
