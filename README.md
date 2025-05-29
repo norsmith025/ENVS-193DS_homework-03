@@ -8,4 +8,6 @@ The code is in one folder, and the data is in another folder.
 
 ## Rendered output
 This is the rendered output for the code in this repository: 
+https://norsmith025.github.io/ENVS-193DS_homework-03/code/envs193ds_homework_3.html
+
 
