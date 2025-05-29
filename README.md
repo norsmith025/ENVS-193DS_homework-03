@@ -3,8 +3,7 @@
 This is my ENVS193DS SPR25 Homework 3 repository. It includes all of the code and final product for Homework 3. 
 
 ## Data and file information 
-The code is in one folder, and the data is in another folder. 
-
+The code is in one folder, and the data is in another folder within the code folder. The data used is a .csv file which is found in the data folder. 
 
 ## Rendered output
 This is the rendered output for the code in this repository: 
